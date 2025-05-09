@@ -81,6 +81,10 @@ classDiagram
     Iphone ..|> AparelhoTelefonico
     Iphone ..|> NavegadorInternet
 ```
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
 ## Instrutores
 
  - Projeto baseado na aula da DIO com: Gleyson Sampaio
