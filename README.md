@@ -19,17 +19,17 @@ A proposta tem como inspiração o vídeo original de lançamento do iPhone em 2
 
 ## Funcionalidades
 
-### 🎵 Reprodutor Musical
+### Reprodutor Musical
 - `tocar()`
 - `pausar()`
 - `selecionarMusica(String musica)`
 
-### 📞 Aparelho Telefônico
+### Aparelho Telefônico
 - `ligar(String numero)`
 - `atender()`
 - `iniciarCorreioVoz()`
 
-### 🌐 Navegador na Internet
+### Navegador na Internet
 - `exibirPagina(String url)`
 - `adicionarNovaAba()`
 - `atualizarPagina()`
@@ -42,13 +42,6 @@ A proposta tem como inspiração o vídeo original de lançamento do iPhone em 2
   - `NavegadorInternet`
 - **Classe principal:**
   - `Iphone.java` (implementa as três interfaces)
-
-
-## Instrutores
-
- - Projeto baseado na aula da DIO com: Gleyson Sampaio
-
-
 
 ## Exemplo de Diagrama UML (Mermaid)
 
@@ -72,4 +65,23 @@ classDiagram
         +atualizarPagina()
     }
 
-    class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet
+    class Iphone {
+        +tocar()
+        +pausar()
+        +selecionarMusica(musica)
+        +ligar(numero)
+        +atender()
+        +iniciarCorreioVoz()
+        +exibirPagina(url)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    Iphone ..|> ReprodutorMusical
+    Iphone ..|> AparelhoTelefonico
+    Iphone ..|> NavegadorInternet
+```
+## Instrutores
+
+ - Projeto baseado na aula da DIO com: Gleyson Sampaio
+
